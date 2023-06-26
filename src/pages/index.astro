@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Penzion Myslivna">
+  <section>
+    <img
+      class="img-fluid"
+      src="/homepageImgs/heroImg_smFont.jpeg"
+      alt="hero image"
+    />
+  </section>
+
+  <section>
+    <h3>O nás</h3>
+    <p>Myslivna se nachází na úpatí Černé hory nedaleko obce Černý Důl.</p>
+    <p>
+      Byla postavena okolo roku 1850 hraběcím rodem Czernin-Morzin a v roce 2007
+      byla zrekonstruována na malý horský penzion.
+    </p>
+  </section>
+
+  <section>
+    <div class="row row-cols-2">
+      <img src="/homepageImgs/cyklista.jpg" alt="" />
+      <img src="/homepageImgs/vyhlednadmyslivnou.jpg" alt="" />
+    </div>
+  </section>
+
+  <section class="bg-success bg-opacity-10">
+    <h3>Rezervace</h3>
+    <div class="container d-flex justify-content-center text-center">
+      <form>
+        <div class="d-flex gap-5">
+          <div class="mb-3">
+            <label for="check-in" class="form-label">Příjezd</label>
+            <input
+              type="date"
+              id="check-in"
+              class="form-control"
+              name="check-in"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="check-out" class="form-label">Odjezd</label>
+            <input
+              type="date"
+              id="check-out"
+              class="form-control"
+              name="check-out"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn btn-success"
+            >Zkontrolovat dostupnost</button
+          >
+        </div>
+      </form>
+    </div>
+  </section>
+</Layout>
